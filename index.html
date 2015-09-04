@@ -1,0 +1,214 @@
+<html>
+<head>
+  <title>NECTERE</title>
+ 
+  <!-- Libraries -->
+  <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+  <!-- Template Files -->
+  <link rel="stylesheet" type="text/css" href="template/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="template/stylesheets/template.css">
+  <script type="text/JavaScript" src="template/javascripts/template.js"></script>
+
+  <!-- SnapScroll Core Files -->
+  <script type="text/JavaScript" src="core/dependencies/jquery.scroll_to.js"></script>
+  <!-- <script type="text/JavaScript" src="core/jquery.snapscroll.js"></script> -->
+
+  <!-- Demo Files -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/demo.css">
+  <!-- <script type="text/JavaScript" src="assets/javascripts/demo.js"></script> -->
+
+  
+  
+  <style type="text/css" media="screen">
+.fixed {
+	position:fixed;
+	z-index:0;
+	width:100%;
+	height:100%;
+}
+.midnightHeader.default {
+    color: black;
+}
+.midnightHeader.white {
+  color: black;
+}
+.midnightHeader.blue {
+  color: white;
+}
+.midnightHeader.default .mylogo {
+	display: block;
+	width: 100%;
+	min-height: 800px;
+	background: url(title3.png) center no-repeat;
+}
+.midnightHeader.white .mylogo {
+	display: block;
+	width: 100%;
+	min-height: 800px;
+	background: url(logo-notitle-colour.png) center no-repeat;
+	opacity: 0.7; filter: alpha(opacity=70);
+}
+.midnightHeader.blue .mylogo {
+	display: block;
+	width: 100%;
+	min-height: 800px;
+	background: url(logo-notitle-white.png) center no-repeat;
+	opacity: 0.7; filter: alpha(opacity=70);
+}
+#head {
+	min-width: 100%!important;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	position: fixed!important;
+	top:0;
+	left:0;
+	right:0;
+	z-index:2;
+	background:transparent!important;
+}
+
+#party {
+	background:none;
+}
+
+#ptclArea {
+	max-height: 100%;
+	overflow: hidden;
+	}
+	
+.background {
+
+    position: fixed;
+
+    top: 0%;
+
+    left: 0%;
+
+    min-width: 100%;
+    
+    min-height: 100%;
+
+    z-index: -10000;
+    
+    
+    
+}
+
+.background img {
+	min-width: 100%;
+	
+}
+
+.clip-background {
+position:relative;
+	z-index: 1;
+	
+}
+
+.clip-background h1, .clip-background h2 {
+background: -webkit-linear-gradient(transparent, transparent), url(template/images/background2.jpg) repeat;
+	-webkit-background-clip: text;
+
+ -webkit-text-fill-color: transparent;
+}
+
+.content section h1 {
+	font: 130px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif!important;
+	color: white;
+	padding-left: 30px;
+  text-align: left;
+  font-weight: 500!important;
+}
+
+.content section h2 {
+	font: 130px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif!important;
+	color: white;
+	padding-top: 20px;
+	padding-left: 30px;
+  text-align: left;
+  font-weight: 100!important;
+    margin-bottom: -40px!important;
+  
+}
+
+@media (orientation:portrait) { 
+
+.background img {
+	height: 100%!important;
+}
+
+
+
+}
+
+@media (orientation:landscape) { 
+
+.background img {
+	width: 100%!important;
+}
+
+}
+
+</style>
+	<script src="midnight.jquery.min.js"></script>
+	<script>
+	// Start midnight
+	$(document).ready(function(){
+	  // Change this to the correct selector.
+	  $('nav.fixed').midnight();
+	});
+	</script>
+</head>
+<body>
+            <div id="head">
+                <div id="ptclArea">
+                    <canvas id="party" height="1800" width="1800"></canvas>
+                </div>
+            </div>
+	
+<div class="content">
+    <section class="third ss-active"><div class="section-content"></div></section>
+    <section class="second" data-midnight="white">
+    	<div class="clip-background">
+    		<h2>WHAT IS</h2>
+    		<h1>NECTERE?</h1>
+    	</div>
+    </section>
+    <section class="first" data-midnight="blue">
+    	<div class="section-content">
+    		<div class="noclip-background">
+    			<h2>WHY IS THAT</h2>
+    			<h1>IMPORTANT?</h1>
+    		</div>
+    	</div>
+    </section>
+    <section class="second" data-midnight="white">
+    		<div class="clip-background">
+    			<h2>HOW DO YOU</h2>
+    			<h1>DO THAT?</h1>
+    		</div>
+    </section>
+    <section class="first" data-midnight="blue">
+    	<div class="noclip-background">
+    		<h2>HOW DOES IT</h2>
+    		<h1>WORK?</h1>
+    	</div>
+    </section>
+    <section class="third"><h1></h1></section>
+  </ul>
+</div>
+
+
+<nav class="fixed">
+  <!-- Your standard header -->
+  <div class="midnightHeader default">
+    <a class="mylogo"></a>
+  </div>
+
+</nav>
+<div class="background"><img src="template/images/background2.svg"/></div>
+  <script src="background.js"></script>
+</body>
+</html>
